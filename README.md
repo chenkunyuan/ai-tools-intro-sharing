@@ -23,7 +23,7 @@ A Linux CLI log analysis tool (`logdash`) showcasing Windsurf-compliant configur
 
 ```
 logdash/
-  .windsurf/
+  .devin/
     rules/logdash.md           # Rules with frontmatter (trigger: always_on)
     skills/
       dev/SKILL.md             # Code generation skill
@@ -60,7 +60,7 @@ The demo follows Windsurf's actual format specification:
 
 | Concept | Metaphor | Windsurf Location |
 |---------|----------|-------------------|
-| Rules | Employee handbook | `.windsurf/rules/*.md` |
-| Skills | Expert specialist | `.windsurf/skills/<name>/SKILL.md` |
-| Workflows | Automated process | `.windsurf/workflows/*.md` |
+| Rules | Employee handbook | `.devin/rules/*.md` |
+| Skills | Expert specialist | `.devin/skills/<name>/SKILL.md` |
+| Workflows | Automated process | `.devin/workflows/*.md` |
 | MCP | USB-C port for AI | `mcp_config.json` |

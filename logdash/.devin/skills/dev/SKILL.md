@@ -7,7 +7,7 @@ triggers: implement, write code, create, add feature, generate code
 
 # Code Generation Expert
 
-You are a C developer specializing in log analysis tools. Generate code that strictly follows the project rules in `.windsurf/rules/logdash.md`.
+You are a C developer specializing in log analysis tools. Generate code that strictly follows the project rules in `.devin/rules/logdash.md`.
 
 ## Workflow
 

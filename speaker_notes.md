@@ -65,7 +65,7 @@ Three activation modes:
 - **Manual**: triggered by an explicit command
 - **Requested**: the AI decides when it's relevant and pulls it in on demand
 
-On the right is a real example — `.windsurf/rules/logdash.md` with `trigger: always_on` in the frontmatter. It specifies C99 standard, snake_case naming, gcc flags, test requirements. No matter when or what you ask the AI to write, it follows these rules.
+On the right is a real example — `.devin/rules/logdash.md` with `trigger: always_on` in the frontmatter. It specifies C99 standard, snake_case naming, gcc flags, test requirements. No matter when or what you ask the AI to write, it follows these rules.
 
 Practical tip: write specific rules. Not "write clean code." Write "functions must not exceed 60 lines — split if longer."
 
@@ -75,7 +75,7 @@ Practical tip: write specific rules. Not "write clean code." Write "functions mu
 
 Let me show you this in action. (switch to Windsurf)
 
-**Step 1**: I created `.windsurf/rules/logdash.md` with coding standards and compiler flags.
+**Step 1**: I created `.devin/rules/logdash.md` with coding standards and compiler flags.
 
 **Step 2**: I tell the AI: "Write a log parsing function."
 

@@ -311,7 +311,7 @@ async function main() {
       fill: { color: C.codeBg },
     });
     s.addText([
-      { text: ".windsurf/rules/logdash.md", options: { bold: true, color: C.teal, fontSize: 11, fontFace: "Consolas", breakLine: true } },
+      { text: ".devin/rules/logdash.md", options: { bold: true, color: C.teal, fontSize: 11, fontFace: "Consolas", breakLine: true } },
       { text: " ", options: { fontSize: 5, breakLine: true } },
       { text: "---", options: { color: C.textMuted, fontSize: 9, fontFace: "Consolas", breakLine: true } },
       { text: "trigger: always_on", options: { color: C.amber, fontSize: 9, fontFace: "Consolas", breakLine: true } },
@@ -344,7 +344,7 @@ async function main() {
     });
 
     const demoSteps = [
-      { num: "1", text: "Create .windsurf/rules/logdash.md\nDefine coding standards + compiler flags + trigger mode" },
+      { num: "1", text: "Create .devin/rules/logdash.md\nDefine coding standards + compiler flags + trigger mode" },
       { num: "2", text: "Tell AI what you need\n\"Write a log parsing function\"" },
       { num: "3", text: "AI generates rule-compliant code\nNaming, comments, compile flags all followed" },
       { num: "4", text: "Compare: With vs Without Rules\nQuality and consistency difference" },
@@ -403,7 +403,7 @@ async function main() {
       fontSize: 11, fontFace: "Calibri", color: C.textMuted2, margin: 0,
     });
 
-    s.addText("Demo: Create .windsurf/rules/logdash.md in Windsurf and show how Rules directly impact code generation quality", {
+    s.addText("Demo: Create .devin/rules/logdash.md in Windsurf and show how Rules directly impact code generation quality", {
       x: 0.7, y: 4.9, w: 9, h: 0.4,
       fontSize: 12, fontFace: "Calibri", color: C.textMuted2, italic: true, margin: 0,
     });
@@ -540,7 +540,7 @@ async function main() {
       fill: { color: C.codeBg },
     });
     s.addText([
-      { text: " .windsurf/skills/", options: { color: C.blue, fontSize: 10, fontFace: "Consolas" } },
+      { text: " .devin/skills/", options: { color: C.blue, fontSize: 10, fontFace: "Consolas" } },
       { text: "  dev/SKILL.md", options: { color: C.teal, fontSize: 10, fontFace: "Consolas" } },
       { text: "  build/SKILL.md", options: { color: C.blue, fontSize: 10, fontFace: "Consolas" } },
       { text: "  test/SKILL.md", options: { color: C.amber, fontSize: 10, fontFace: "Consolas" } },
@@ -694,7 +694,7 @@ async function main() {
       fill: { color: C.codeBg },
     });
     s.addText([
-      { text: "# .windsurf/workflows/ci-pipeline.md", options: { color: C.teal, fontSize: 10, fontFace: "Consolas", breakLine: true } },
+      { text: "# .devin/workflows/ci-pipeline.md", options: { color: C.teal, fontSize: 10, fontFace: "Consolas", breakLine: true } },
       { text: "Invoke: ", options: { color: C.textMuted, fontSize: 10, fontFace: "Consolas" } },
       { text: "/ci-pipeline", options: { color: C.amber, fontSize: 10, fontFace: "Consolas" } },
       { text: "  → dev → build → test", options: { color: C.textMuted2, fontSize: 10, fontFace: "Consolas" } },
