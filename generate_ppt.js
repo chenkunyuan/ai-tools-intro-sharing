@@ -983,7 +983,56 @@ async function main() {
     });
   }
 
-  // ========== SLIDE 15: Q&A ==========
+  // ========== SLIDE 15: Call to Action ==========
+  {
+    const s = pres.addSlide();
+    s.background = { color: C.darkBg };
+
+    // Subtle decorative elements
+    s.addShape(pres.shapes.OVAL, {
+      x: 8.5, y: -1, w: 3, h: 3,
+      fill: { color: C.amber, transparency: 88 },
+    });
+    s.addShape(pres.shapes.OVAL, {
+      x: -1.5, y: 3.5, w: 3.5, h: 3.5,
+      fill: { color: C.teal, transparency: 88 },
+    });
+
+    s.addText("No matter where you are with AI today,", {
+      x: 1, y: 0.6, w: 8, h: 0.8,
+      fontSize: 26, fontFace: "Arial Black", color: C.textLight, align: "center", margin: 0,
+    });
+
+    // Point 1
+    s.addShape(pres.shapes.RECTANGLE, {
+      x: 1.5, y: 1.5, w: 7.0, h: 1.2,
+      fill: { color: C.darkBg2 },
+    });
+    s.addShape(pres.shapes.RECTANGLE, {
+      x: 1.5, y: 1.5, w: 0.06, h: 1.2, fill: { color: C.teal },
+    });
+    s.addText([
+      { text: "From now on, deeply integrate AI into your daily work.", options: { bold: true, fontSize: 18, fontFace: "Calibri", color: C.textLight, breakLine: true } },
+      { text: " ", options: { fontSize: 4, breakLine: true } },
+      { text: "Not as a toy. Not as an afterthought. As a core part of how you engineer.", options: { fontSize: 14, fontFace: "Calibri", color: C.textMuted } },
+    ], { x: 1.8, y: 1.55, w: 6.4, h: 1.1, valign: "middle", margin: 0 });
+
+    // Point 2
+    s.addShape(pres.shapes.RECTANGLE, {
+      x: 1.5, y: 3.0, w: 7.0, h: 1.2,
+      fill: { color: C.darkBg2 },
+    });
+    s.addShape(pres.shapes.RECTANGLE, {
+      x: 1.5, y: 3.0, w: 0.06, h: 1.2, fill: { color: C.amber },
+    });
+    s.addText([
+      { text: "Everyone's workflow is different. Share your best ideas.", options: { bold: true, fontSize: 18, fontFace: "Calibri", color: C.textLight, breakLine: true } },
+      { text: " ", options: { fontSize: 4, breakLine: true } },
+      { text: "The prompt, rule, or skill you think is \"obvious\" might be exactly what someone else needs.", options: { fontSize: 14, fontFace: "Calibri", color: C.textMuted } },
+    ], { x: 1.8, y: 3.05, w: 6.4, h: 1.1, valign: "middle", margin: 0 });
+  }
+
+  // ========== SLIDE 16: Q&A ==========
   {
     const s = pres.addSlide();
     s.background = { color: C.darkBg };

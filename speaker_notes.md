@@ -195,7 +195,7 @@ Harness Engineering doesn't replace Prompt and Context — it **builds on top of
 
 ---
 
-## Slide 14 — Best Practices (37:00-40:00)
+## Slide 14 — Best Practices (35:00-40:00)
 
 The investment pyramid — **build bottom-up, step by step**:
 
@@ -211,7 +211,17 @@ Three key principles:
 
 ---
 
-## Slide 15 — Q&A (40:00-45:00)
+## Slide 15 — Call to Action (40:00-41:30)
+
+Two things I want you to take away today.
+
+First: **deeply integrate AI into your daily work, starting now.** Not as a toy you play with occasionally. Not as an afterthought when you're stuck. Make it a core part of how you engineer. Whatever level you're at today — casual prompter, context engineer, or already building harnesses — go deeper. The gap between engineers who harness AI and those who don't is only going to widen.
+
+Second: **share your best ideas.** Everyone develops their own AI workflow — different tools, different prompts, different tricks. The prompt pattern you think is obvious? Someone else hasn't thought of it. The rule that saves you an hour a day? Your teammate is still doing that manually. Commit your rules and skills to the repo. Write up what works. The best engineering teams are the ones where AI knowledge flows freely.
+
+---
+
+## Slide 16 — Q&A (41:30-45:00)
 
 One sentence to wrap up: **From Prompt to Harness — AI is not just a tool, it's your engineering partner. Start building your Harness today.**
 
