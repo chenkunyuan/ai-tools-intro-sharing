@@ -666,7 +666,7 @@ async function main() {
       { text: "Report\n+ Done", x: 7.8, y: 2.2, color: C.darkBg2 },
       { text: "Build\nPass?", x: 3.2, y: 3.3, color: C.textMuted2, isDiamond: true },
       { text: "Tests\nPass?", x: 5.9, y: 3.3, color: C.textMuted2, isDiamond: true },
-      { text: "Fail: Report\n+ Fix Hint", x: 4.0, y: 4.3, color: C.red },
+      { text: "Loop to dev\nRetry (max 3)", x: 4.0, y: 4.3, color: C.red },
     ];
 
     flowBoxes.forEach((box) => {
@@ -681,14 +681,16 @@ async function main() {
       });
     });
 
-    // Flow arrows
+    // Flow arrows (forward path)
     s.addText("→", { x: 2.2, y: 2.2, w: 0.7, h: 0.65, fontSize: 22, color: C.textMuted, align: "center", valign: "middle", margin: 0 });
     s.addText("→", { x: 4.9, y: 2.2, w: 0.35, h: 0.65, fontSize: 22, color: C.textMuted, align: "center", valign: "middle", margin: 0 });
     s.addText("→", { x: 7.6, y: 2.2, w: 0.35, h: 0.65, fontSize: 22, color: C.textMuted, align: "center", valign: "middle", margin: 0 });
-    // Decision branches
+    // Decision branches (downward)
     s.addText("↓", { x: 3.85, y: 2.85, w: 0.35, h: 0.5, fontSize: 20, color: C.textMuted, align: "center", valign: "middle", margin: 0 });
     s.addText("↓", { x: 6.55, y: 2.85, w: 0.35, h: 0.5, fontSize: 20, color: C.textMuted, align: "center", valign: "middle", margin: 0 });
-    s.addText("✗", { x: 4.6, y: 3.7, w: 0.35, h: 0.6, fontSize: 14, color: C.red, align: "center", valign: "middle", margin: 0 });
+    // Loop-back arrow (from fail box back to dev)
+    s.addText("⟲", { x: 5.4, y: 3.85, w: 0.5, h: 0.6, fontSize: 28, color: C.red, align: "center", valign: "middle", margin: 0 });
+    s.addText("back to dev", { x: 1.0, y: 4.55, w: 2.5, h: 0.35, fontSize: 9, fontFace: "Calibri", color: C.red, italic: true, align: "center", valign: "middle", margin: 0 });
 
     // Bottom: workflow config
     s.addShape(pres.shapes.RECTANGLE, {
@@ -699,10 +701,10 @@ async function main() {
       { text: "# .devin/workflows/ci-pipeline.md", options: { color: C.teal, fontSize: 10, fontFace: "Consolas", breakLine: true } },
       { text: "Invoke: ", options: { color: C.textMuted, fontSize: 10, fontFace: "Consolas" } },
       { text: "/ci-pipeline", options: { color: C.amber, fontSize: 10, fontFace: "Consolas" } },
-      { text: "  → dev → build → test", options: { color: C.textMuted2, fontSize: 10, fontFace: "Consolas" } },
+      { text: "  dev → build → test  (fail → loop back to dev, max 3 retries)", options: { color: C.textMuted2, fontSize: 10, fontFace: "Consolas" } },
     ], { x: 1.0, y: 4.25, w: 8.0, h: 0.55, valign: "middle", margin: 0 });
 
-    s.addText("Demo: Workflow calls three skills in sequence — dev → build → test — with state passing between each", {
+    s.addText("Demo: On build or test failure, workflow loops back to dev for self-diagnosis, then re-runs build → test", {
       x: 0.7, y: 5.0, w: 9, h: 0.35,
       fontSize: 12, fontFace: "Calibri", color: C.textMuted2, italic: true, margin: 0,
     });
