@@ -107,11 +107,11 @@ Let's look at actual examples. (switch to Windsurf demo)
 
 I created three skills — `dev`, `build`, `test` — each is a `SKILL.md` file:
 
-- **dev**: understand requirements → generate rule-compliant code → create .c + .h files
+- **dev**: read specs → understand requirements → plan → AI review → user approval → generate code
 - **build**: run gcc with project flags → report success or detailed errors → suggest fixes
 - **test**: run make test → report pass/fail counts → identify failing assertions with root cause analysis
 
-(open Windsurf, show the skill directory structure, demo invoking a skill)
+(open Windsurf, show the skill directory structure and the specs/ folder, demo invoking a skill — note the Plan + Review + User Approval gates before any code is generated)
 
 Key characteristics of Skills:
 1. YAML frontmatter with name, description, triggers

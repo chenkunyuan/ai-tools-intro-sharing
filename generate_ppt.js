@@ -503,7 +503,7 @@ async function main() {
 
     // 3 skill cards
     const skillCards = [
-      { name: "dev", icon: "1", desc: "Code generation\nUnderstand requirements\nGenerate rule-compliant C code\nCreate .c + .h files", color: C.teal },
+      { name: "dev", icon: "1", desc: "Code generation\nRead specs from specs/ folder\nPlan + AI review + user approval\nThen generate C code", color: C.teal },
       { name: "build", icon: "2", desc: "Compilation verification\nRun gcc with project flags\nReport success or errors\nSuggest fixes on failure", color: C.blue },
       { name: "test", icon: "3", desc: "Test execution\nmake test to run all tests\nReport pass/fail counts\nIdentify failing assertions", color: C.amber },
     ];
@@ -544,7 +544,9 @@ async function main() {
       { text: "  dev/SKILL.md", options: { color: C.teal, fontSize: 10, fontFace: "Consolas" } },
       { text: "  build/SKILL.md", options: { color: C.blue, fontSize: 10, fontFace: "Consolas" } },
       { text: "  test/SKILL.md", options: { color: C.amber, fontSize: 10, fontFace: "Consolas" } },
-    ], { x: 1.0, y: 4.9, w: 8.0, h: 0.5, valign: "middle", margin: 0 });
+      { text: " specs/", options: { color: C.textMuted2, fontSize: 10, fontFace: "Consolas" } },
+      { text: "  *.md  (spec docs read by dev)", options: { color: C.textMuted, fontSize: 10, fontFace: "Consolas" } },
+    ], { x: 1.0, y: 4.8, w: 8.0, h: 0.7, valign: "middle", margin: 0 });
   }
 
   // ========== SLIDE 9: Workflows Concept ==========
