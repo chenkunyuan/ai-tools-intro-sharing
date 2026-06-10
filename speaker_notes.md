@@ -175,7 +175,7 @@ With MCP:
 - AI operates Git — commit, branch, log
 - AI queries databases directly
 
-(demo: connect Filesystem + Git MCP servers in Windsurf, let the AI operate the logdash project)
+(demo: open `mcp_config.example.json`, show the three MCP servers — filesystem, git, shell — then connect them in Windsurf and demonstrate the AI operating the logdash project directly)
 
 This is a qualitative change in capability. The AI transforms from a "chatbot" into a real **engineering partner** that can take action.
 

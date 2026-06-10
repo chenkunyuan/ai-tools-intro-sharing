@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/mcp-server-filesystem", "/path/to/logdash"],
+      "description": "Read and write files in the logdash project"
+    },
+    "git": {
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/mcp-server-git", "--repository", "/path/to/logdash"],
+      "description": "Git operations — commit, log, diff, branch"
+    },
+    "shell": {
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/mcp-server-commands"],
+      "description": "Execute shell commands for build and test"
+    }
+  }
+}

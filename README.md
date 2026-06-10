@@ -31,6 +31,7 @@ logdash/
       test/SKILL.md            # Test execution skill
     workflows/
       ci-pipeline.md           # /ci-pipeline → dev → build → test
+  mcp_config.example.json      # MCP servers: filesystem, git, shell
   src/          parser.c/h, stats.c/h, main.c
   tests/        test_parser.c (9 tests), test_stats.c (6 tests)
   Makefile      all / test / debug / release / clean
