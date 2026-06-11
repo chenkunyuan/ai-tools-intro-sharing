@@ -1,4 +1,4 @@
-# AI Coding Tools 101: From Prompt to Harness Engineering
+# AI Coding Tools: From Prompt to Harness Engineering
 
 A 30-45 minute intro presentation on AI coding tools for software engineers, covering universal concepts (Rules, Skills, Workflows, MCP) across platforms (Claude, Cursor, Windsurf, etc.) with a live demo project using Windsurf.
 
